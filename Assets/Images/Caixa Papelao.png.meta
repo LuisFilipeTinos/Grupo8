@@ -164,7 +164,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Caixa Papelao_0: -6857089358505134368
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

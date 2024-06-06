@@ -164,7 +164,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Garrafa Plastico_0: 8416318793441918172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

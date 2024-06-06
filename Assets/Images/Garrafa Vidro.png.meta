@@ -188,7 +188,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Garrafa Vidro_0: 2157621168977827350
+      Garrafa Vidro_1: -6860246710508462100
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

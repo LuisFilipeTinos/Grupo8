@@ -164,7 +164,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Copo Plastico_0: -6135758082644073822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

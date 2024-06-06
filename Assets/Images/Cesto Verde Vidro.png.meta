@@ -164,7 +164,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cesto Verde Vidro_0: -3039773049865543452
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
