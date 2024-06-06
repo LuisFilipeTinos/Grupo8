@@ -1,0 +1,5 @@
+C:/ProjetoGrupo8/Grupo8/.utmp/RelWithDebInfo/3p3c6i52/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/ProjetoGrupo8/Grupo8/.utmp/RelWithDebInfo/3p3c6i52/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/ProjetoGrupo8/Grupo8/.utmp/RelWithDebInfo/3p3c6i52/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/ProjetoGrupo8/Grupo8/.utmp/RelWithDebInfo/3p3c6i52/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+C:/ProjetoGrupo8/Grupo8/.utmp/RelWithDebInfo/3p3c6i52/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir
