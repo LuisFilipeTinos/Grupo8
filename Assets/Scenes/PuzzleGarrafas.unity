@@ -1902,7 +1902,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4687225833520496150, guid: c23de5f87c272ec4ea9ecfa60e34d9fd, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 775.3608
+      value: 776.3719
       objectReference: {fileID: 0}
     - target: {fileID: 4687225833520496150, guid: c23de5f87c272ec4ea9ecfa60e34d9fd, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1910,7 +1910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4687225833520496150, guid: c23de5f87c272ec4ea9ecfa60e34d9fd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.7032
+      value: 1.703186
       objectReference: {fileID: 0}
     - target: {fileID: 4687225833520496150, guid: c23de5f87c272ec4ea9ecfa60e34d9fd, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1982,7 +1982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5059298314041237352, guid: c23de5f87c272ec4ea9ecfa60e34d9fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 207.62135
+      value: 167
       objectReference: {fileID: 0}
     - target: {fileID: 5059298314041237352, guid: c23de5f87c272ec4ea9ecfa60e34d9fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1999,6 +1999,10 @@ PrefabInstance:
     - target: {fileID: 5208112795791136086, guid: c23de5f87c272ec4ea9ecfa60e34d9fd, type: 3}
       propertyPath: m_Name
       value: TimerBG
+      objectReference: {fileID: 0}
+    - target: {fileID: 8387326477500798092, guid: c23de5f87c272ec4ea9ecfa60e34d9fd, type: 3}
+      propertyPath: timeInSeconds
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

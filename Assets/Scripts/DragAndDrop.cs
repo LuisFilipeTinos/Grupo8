@@ -13,7 +13,6 @@ public class DragAndDrop : MonoBehaviour,IDragHandler
         rectTransform.anchoredPosition += eventData.delta/3;
         //transform.position = Input.mousePosition;
     }
-
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
