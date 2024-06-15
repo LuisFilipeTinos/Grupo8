@@ -15,13 +15,20 @@ public class DragAndDrop : MonoBehaviour,IDragHandler, IDropHandler
 
     private Dictionary<string, Dictionary<string, System.Action>> actions;
 
+    private Collider2D objCollider;
+
+    float controleVelocidade = 14/4;
+
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta / 3;
+        rectTransform.anchoredPosition += eventData.delta /controleVelocidade;
         //transform.position = Input.mousePosition;
+        objCollider.isTrigger = false;
     }
     void Start()
     {
+        objCollider = GetComponent<Collider2D>();
+
         rectTransform = GetComponent<RectTransform>();
 
         actions = new Dictionary<string, Dictionary<string, System.Action>>()
@@ -94,6 +101,11 @@ public class DragAndDrop : MonoBehaviour,IDragHandler, IDropHandler
             if (actions.ContainsKey(this.transform.tag) &&
                 actions[this.transform.tag].ContainsKey(hittedTrashcan.collider.gameObject.tag))
                 actions[this.transform.tag][hittedTrashcan.collider.gameObject.tag]();
+        }
+
+        if (objCollider != null)
+        {
+            objCollider.isTrigger = true;
         }
     }
 }
