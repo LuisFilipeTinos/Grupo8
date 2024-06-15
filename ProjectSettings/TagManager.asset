@@ -8,6 +8,7 @@ TagManager:
   - Papel
   - Vidro
   - Plastico
+  - TapStart
   layers:
   - Default
   - TransparentFX
