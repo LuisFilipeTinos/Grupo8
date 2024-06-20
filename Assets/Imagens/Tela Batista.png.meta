@@ -164,7 +164,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tela Batista_0: -8740032219805429641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

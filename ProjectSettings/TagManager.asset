@@ -9,6 +9,7 @@ TagManager:
   - Vidro
   - Plastico
   - TapStart
+  - ActualLevelManager
   layers:
   - Default
   - TransparentFX

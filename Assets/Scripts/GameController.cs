@@ -50,13 +50,13 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("Próxima fase!");
         // Carregar a próxima fase 
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(Random.Range(1, 3));
     }
 
     private void GameOver()
     {
         Debug.Log("Game Over!");
         // Adicione a lógica de game over aqui, por exemplo, carregar uma cena de game over
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 }

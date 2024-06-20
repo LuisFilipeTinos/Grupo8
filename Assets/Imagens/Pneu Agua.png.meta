@@ -164,7 +164,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pneu Agua_0: 323700898559948983
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -188,7 +188,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vaso Agua_0: -9181187531539148449
+      Vaso Agua_1: -804218399558747278
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

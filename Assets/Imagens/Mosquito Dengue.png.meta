@@ -164,7 +164,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mosquito Dengue_0: 8511253893113855246
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

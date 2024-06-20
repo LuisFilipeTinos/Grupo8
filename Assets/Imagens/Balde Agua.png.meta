@@ -164,7 +164,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Balde Agua_0: -1508483074846501745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

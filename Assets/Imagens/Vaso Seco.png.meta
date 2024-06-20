@@ -188,7 +188,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vaso Seco_0: 1823356373173179719
+      Vaso Seco_1: 1045756076603193831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DentedPixel;
+using UnityEngine.SceneManagement;
 
 public class TimerBarController : MonoBehaviour
 {
@@ -24,6 +25,6 @@ public class TimerBarController : MonoBehaviour
 
     private void RunTimer()
     {
-        LeanTween.scaleX(timerBar, scaleTo, timeInSeconds);
+        LeanTween.scaleX(timerBar, scaleTo, timeInSeconds).setOnComplete(() => { SceneManager.LoadScene(3); });
     }
 }

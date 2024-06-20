@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class DragAndDrop : MonoBehaviour,IDragHandler, IDropHandler
 {
@@ -35,34 +37,34 @@ public class DragAndDrop : MonoBehaviour,IDragHandler, IDropHandler
         {
             { "Vidro", new Dictionary<string, System.Action>()
                 {
-                    { "Vidro", () => Destroy(gameObject) },
-                    { "Metal", () => { Destroy(gameObject); /* Link para aba de perca de pontos */ } },
-                    { "Plastico", () => { Destroy(gameObject); /* Link para aba de perca de pontos */ } },
-                    { "Papel", () => { Destroy(gameObject); /* Link para aba de perca de pontos */ } },
+                    { "Vidro", () => ManageCorrectAction()  },
+                    { "Metal", () =>  ManageWrongAction()  },
+                    { "Plastico", () =>  ManageWrongAction()   },
+                    { "Papel", () => ManageWrongAction() },
                 }
             },
             { "Papel", new Dictionary<string, System.Action>()
                 {
-                    { "Vidro", () => { Destroy(gameObject); /* Link para aba de perca de pontos */ } },
-                    { "Metal", () => { Destroy(gameObject); /* Link para aba de perca de pontos */ } },
-                    { "Plastico", () => { Destroy(gameObject); /* Link para aba de perca de pontos */ } },
-                    { "Papel", () => Destroy(gameObject) },
+                    { "Vidro", () => ManageWrongAction() },
+                    { "Metal", () => ManageWrongAction() },
+                    { "Plastico", () => ManageWrongAction() },
+                    { "Papel", () => ManageCorrectAction() },
                 }
             },
             { "Plastico", new Dictionary<string, System.Action>()
                 {
-                    { "Vidro", () => { Destroy(gameObject); /* Link para aba de perca de pontos */ } },
-                    { "Metal", () => { Destroy(gameObject); /* Link para aba de perca de pontos */ } },
-                    { "Plastico", () => Destroy(gameObject) },
-                    { "Papel", () => { Destroy(gameObject); /* Link para aba de perca de pontos */ } },
+                    { "Vidro", () => ManageWrongAction() },
+                    { "Metal", () => ManageWrongAction() },
+                    { "Plastico", () => ManageCorrectAction() },
+                    { "Papel", () => ManageWrongAction() },
                 }
             },
             { "Metal", new Dictionary<string, System.Action>()
                 {
-                    { "Vidro", () => { Destroy(gameObject); /* Link para aba de perca de pontos */ } },
-                    { "Metal", () => Destroy(gameObject) },
-                    { "Plastico", () => Destroy(gameObject) },
-                    { "Papel", () => { Destroy(gameObject); /* Link para aba de perca de pontos */ } },
+                    { "Vidro", () => ManageWrongAction() },
+                    { "Metal", () => ManageCorrectAction() },
+                    { "Plastico", () => ManageWrongAction() },
+                    { "Papel", () => ManageWrongAction() },
                 }
             }
         };
@@ -107,5 +109,22 @@ public class DragAndDrop : MonoBehaviour,IDragHandler, IDropHandler
         {
             objCollider.isTrigger = true;
         }
+    }
+
+    public void ManageCorrectAction()
+    {
+        //A quantidade de cada lixeira + 1 (que é o último objeto a ser contabilizado)
+        if (GameObject.FindGameObjectsWithTag("Papel").Length +
+            GameObject.FindGameObjectsWithTag("Plastico").Length +
+            GameObject.FindGameObjectsWithTag("Vidro").Length +
+            GameObject.FindGameObjectsWithTag("Metal").Length == 5)
+            SceneManager.LoadScene(Random.Range(1, 3));
+
+        Destroy(gameObject);
+    }
+
+    public void ManageWrongAction()
+    {
+        SceneManager.LoadScene(3);
     }
 }

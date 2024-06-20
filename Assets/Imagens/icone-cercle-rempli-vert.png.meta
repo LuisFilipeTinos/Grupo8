@@ -164,7 +164,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icone-cercle-rempli-vert_0: 5792568197612673214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

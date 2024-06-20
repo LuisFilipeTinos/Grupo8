@@ -164,7 +164,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tela Quintal_0: -5011226189673449021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -188,7 +188,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      certoerradopneus_0: 6139699908523221591
+      certoerradopneus_1: -485706970138662732
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
