@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Linq;
 
 public class GameController : MonoBehaviour
 {
@@ -50,7 +51,14 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("Próxima fase!");
         // Carregar a próxima fase 
-        SceneManager.LoadScene(Random.Range(1, 3));
+        //SceneManager.LoadScene(Random.Range(1, 3));
+
+        var actualLevelIndex = SceneManager.GetActiveScene().buildIndex;
+        var exclude = new HashSet<int>() { actualLevelIndex };
+        var range = Enumerable.Range(1, 2).Where(x => !exclude.Contains(x));
+        var rand = new System.Random();
+        int index = rand.Next(0, 2 - exclude.Count);
+        SceneManager.LoadScene(range.ElementAt(index));
     }
 
     private void GameOver()

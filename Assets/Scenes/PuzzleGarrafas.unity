@@ -1859,12 +1859,28 @@ PrefabInstance:
       value: Coloque os objetos nas lixeiras corretas
       objectReference: {fileID: 0}
     - target: {fileID: 635489579458350914, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b477bc3bca74b6043a779139f6026c9d, type: 2}
+    - target: {fileID: 635489579458350914, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 635489579458350914, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -9137753020124955787, guid: b477bc3bca74b6043a779139f6026c9d, type: 2}
+    - target: {fileID: 635489579458350914, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
       propertyPath: m_VerticalAlignment
       value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 635489579458350914, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 635489579458350914, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2416183858704298249, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
       propertyPath: m_Name
@@ -1963,8 +1979,48 @@ PrefabInstance:
       value: Arraste os objetos
       objectReference: {fileID: 0}
     - target: {fileID: 7534681256464805632, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_fontSize
+      value: 66.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534681256464805632, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b477bc3bca74b6043a779139f6026c9d, type: 2}
+    - target: {fileID: 7534681256464805632, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534681256464805632, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 66.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534681256464805632, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -9137753020124955787, guid: b477bc3bca74b6043a779139f6026c9d, type: 2}
+    - target: {fileID: 7534681256464805632, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534681256464805632, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068152666692257825, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b477bc3bca74b6043a779139f6026c9d, type: 2}
+    - target: {fileID: 8068152666692257825, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068152666692257825, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -9137753020124955787, guid: b477bc3bca74b6043a779139f6026c9d, type: 2}
+    - target: {fileID: 8068152666692257825, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8471918769226258636, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
       propertyPath: m_Color.a

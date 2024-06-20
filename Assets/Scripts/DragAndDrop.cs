@@ -118,7 +118,15 @@ public class DragAndDrop : MonoBehaviour,IDragHandler, IDropHandler
             GameObject.FindGameObjectsWithTag("Plastico").Length +
             GameObject.FindGameObjectsWithTag("Vidro").Length +
             GameObject.FindGameObjectsWithTag("Metal").Length == 5)
-            SceneManager.LoadScene(Random.Range(1, 3));
+        {
+            var actualLevelIndex = SceneManager.GetActiveScene().buildIndex;
+            var exclude = new HashSet<int>() { actualLevelIndex };
+            var range = Enumerable.Range(1, 2).Where(x => !exclude.Contains(x));
+            var rand = new System.Random();
+            int index = rand.Next(0, 2 - exclude.Count);
+            SceneManager.LoadScene(range.ElementAt(index));
+        }
+            
 
         Destroy(gameObject);
     }
