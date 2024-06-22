@@ -23,5 +23,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
     guid: 032806a7fde28254cab5deffaf96f89e
+  - enabled: 1
+    path: Assets/Scenes/SceneCredito.unity
+    guid: a718ca1bca907604490948d1df59555a
+  - enabled: 1
+    path: Assets/Scenes/PosInicio.unity
+    guid: abcfcb20a4f28844fbfa396af922fe83
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
