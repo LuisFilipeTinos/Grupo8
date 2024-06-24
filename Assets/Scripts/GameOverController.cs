@@ -9,7 +9,7 @@ public class GameOverController : MonoBehaviour
     public void Start()
     {
        var actualLevelController = GameObject.FindGameObjectWithTag("ActualLevelManager");
-       Destroy(actualLevelController);
+        actualLevelController.GetComponent<ActualLevelController>().level = 0;
     }
 
     public void BackToMainMenu()

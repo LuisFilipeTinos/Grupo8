@@ -26,7 +26,9 @@ public class DragAndDrop : MonoBehaviour,IDragHandler, IDropHandler
         rectTransform.anchoredPosition += eventData.delta /controleVelocidade;
         //transform.position = Input.mousePosition;
         objCollider.isTrigger = false;
+        Cursor.lockState = CursorLockMode.Confined;
     }
+
     void Start()
     {
         objCollider = GetComponent<Collider2D>();
