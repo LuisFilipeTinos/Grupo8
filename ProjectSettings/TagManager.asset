@@ -10,6 +10,9 @@ TagManager:
   - Plastico
   - TapStart
   - ActualLevelManager
+  - IncorrectObject
+  - CorrectObject
+  - Canvas
   layers:
   - Default
   - TransparentFX

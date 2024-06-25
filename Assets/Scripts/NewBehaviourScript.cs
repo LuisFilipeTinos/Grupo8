@@ -18,7 +18,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         x = UnityEngine.Random.Range(initiallimitX, finallimitX);
         y = UnityEngine.Random.Range(initiallimitY, finallimitY);
-        transform.position=new Vector2(x,y);
+        transform.GetComponent<RectTransform>().anchoredPosition = new Vector2(x,y);
 
     }
 
