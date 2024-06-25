@@ -971,7 +971,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &1057539694
 GameObject:
@@ -4281,11 +4281,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7252030590289369269, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -28
+      value: -0.000005722
       objectReference: {fileID: 0}
     - target: {fileID: 7252030590289369269, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 127
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 7534681256464805632, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
       propertyPath: m_text
@@ -4355,6 +4355,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 5421701391809930510, guid: 5cd178737cc331d4a838d27f1162625d, type: 2}
+    - target: {fileID: 8068152666692257825, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 8068152666692257825, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0

@@ -12,6 +12,7 @@ TagManager:
   - ActualLevelManager
   - IncorrectObject
   - CorrectObject
+  - Canvas
   layers:
   - Default
   - TransparentFX
