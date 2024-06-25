@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class clickable : MonoBehaviour
+public class clickable : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] float initiallimitY;
     [SerializeField] float finallimitY;
@@ -20,23 +21,6 @@ public class clickable : MonoBehaviour
         gameController = FindObjectOfType<GameController>();
     }
 
-    private void OnMouseDown()
-    {
-        gameController.ObjetoClicado(gameObject);
-
-        {
-            x = UnityEngine.Random.Range(initiallimitX, finallimitX);
-            y = UnityEngine.Random.Range(initiallimitY, finallimitY);
-            transform.position = new Vector2(x, y);
-
-        }
-
-        if (gameObject.name == "ObjetoErrado")
-        {
-            GameOver();
-        }
-    }
-
     private void GameOver()
     {
         Debug.Log("Game Over!");
@@ -44,4 +28,18 @@ public class clickable : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        gameController.ObjetoClicado(gameObject);
+ 
+        //x = UnityEngine.Random.Range(initiallimitX, finallimitX);
+        //y = UnityEngine.Random.Range(initiallimitY, finallimitY);
+        //transform.position = new Vector2(x, y);
+
+        //if (gameObject.tag == "IncorrectObject")
+        //{
+        //    Destroy(this.gameObject);
+        //    GameOver();
+        //}
+    }
 }

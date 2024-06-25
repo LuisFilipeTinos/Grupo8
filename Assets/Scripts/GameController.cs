@@ -26,12 +26,14 @@ public class GameController : MonoBehaviour
 
     public void ObjetoClicado(GameObject objeto)
     {
-        if (objeto == objetoErrado || objeto == objetoErrado2 || objeto == objetoErrado3 || objeto == objetoErrado4)
+        if (objeto.tag == "IncorrectObject")
         {
+            Destroy(objeto);
             GameOver();
         }
-        else if (objeto == objetoCorreto || objeto == objetoCorreto2 || objeto == objetoCorreto3 || objeto == objetoCorreto4)
+        else if (objeto.tag == "CorrectObject")
         {
+            Destroy(objeto);
             cliquesRestantes--;
             AtualizarContador();
 

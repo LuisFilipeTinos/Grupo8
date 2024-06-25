@@ -137,10 +137,10 @@ TextureImporter:
       name: BAURU_SEM_DENGUE_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1280
-        height: 720
+        x: 437
+        y: 133
+        width: 423
+        height: 462
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,7 +157,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fbc9f309095bd7340b9b137bb2f2b624
     internalID: 0
     vertices: []
     indices: 
