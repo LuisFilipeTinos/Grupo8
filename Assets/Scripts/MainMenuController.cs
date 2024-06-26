@@ -7,6 +7,6 @@ public class MainMenuController : MonoBehaviour
 {
     public void LoadFirstLevel()
     {
-        SceneManager.LoadScene(Random.Range(1, 3));
+        SceneManager.LoadScene(Random.Range(1, 4));
     }
 }

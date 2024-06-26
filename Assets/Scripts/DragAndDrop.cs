@@ -121,9 +121,9 @@ public class DragAndDrop : MonoBehaviour,IDragHandler, IDropHandler
         {
             var actualLevelIndex = SceneManager.GetActiveScene().buildIndex;
             var exclude = new HashSet<int>() { actualLevelIndex };
-            var range = Enumerable.Range(1, 2).Where(x => !exclude.Contains(x));
+            var range = Enumerable.Range(1, 3).Where(x => !exclude.Contains(x));
             var rand = new System.Random();
-            int index = rand.Next(0, 2 - exclude.Count);
+            int index = rand.Next(0, 3 - exclude.Count);
             SceneManager.LoadScene(range.ElementAt(index));
         }
             
@@ -133,6 +133,6 @@ public class DragAndDrop : MonoBehaviour,IDragHandler, IDropHandler
 
     public void ManageWrongAction()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(6);
     }
 }

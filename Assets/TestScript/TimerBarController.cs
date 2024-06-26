@@ -25,6 +25,6 @@ public class TimerBarController : MonoBehaviour
 
     private void RunTimer()
     {
-        LeanTween.scaleX(timerBar, scaleTo, timeInSeconds).setOnComplete(() => { SceneManager.LoadScene(3); });
+        LeanTween.scaleX(timerBar, scaleTo, timeInSeconds).setOnComplete(() => { SceneManager.LoadScene(6); });
     }
 }

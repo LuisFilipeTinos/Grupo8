@@ -5,29 +5,26 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: dff2fae495f60a2478a45ea1734ced22
   - enabled: 1
     path: Assets/Scenes/PuzzleGarrafas.unity
-    guid: 09a26922b96e5434d8484a2bfb283d37
-  - enabled: 0
-    path: Assets/Scenes/PuzzleEspantarMosquito.unity
-    guid: c791c6811d2b10540a8a9b4e2cc18e27
+    guid: 884be4e49fed6b04ea63f0697be5cc43
   - enabled: 1
     path: Assets/Scenes/PuzzleRemoverAguaParada.unity
-    guid: 7348198fb98541142b3b1ad6ceb3ce9a
+    guid: 6dcc98ee50d55c248b2d504207c4f7a2
   - enabled: 1
-    path: Assets/Scenes/GameOverScene.unity
-    guid: 032806a7fde28254cab5deffaf96f89e
+    path: Assets/Scenes/PuzzleMosquito.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/SceneCredito.unity
     guid: a718ca1bca907604490948d1df59555a
   - enabled: 1
     path: Assets/Scenes/PosInicio.unity
     guid: abcfcb20a4f28844fbfa396af922fe83
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: 032806a7fde28254cab5deffaf96f89e
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

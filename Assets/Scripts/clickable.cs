@@ -25,7 +25,7 @@ public class clickable : MonoBehaviour, IPointerClickHandler
     {
         Debug.Log("Game Over!");
 
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(6);
     }
 
     public void OnPointerClick(PointerEventData eventData)

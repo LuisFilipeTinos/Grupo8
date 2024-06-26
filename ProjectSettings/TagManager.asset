@@ -13,6 +13,8 @@ TagManager:
   - IncorrectObject
   - CorrectObject
   - Canvas
+  - Mosquito
+  - ColliderHit
   layers:
   - Default
   - TransparentFX
