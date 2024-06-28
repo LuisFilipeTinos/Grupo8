@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class MosquitoController : MonoBehaviour
 {
     [SerializeField] float initialLimitY;
     [SerializeField] float finalLimitY;
-
+   
     [SerializeField] float initialLimitX;
     [SerializeField] float finalLimitX;
 
@@ -23,14 +25,17 @@ public class MosquitoController : MonoBehaviour
 
     int life;
 
-    SpriteRenderer sr;
+    //SpriteRenderer sr;
     BoxCollider2D boxCollider;
+    public Image img;
+
 
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
+        img = GetComponent<Image>();
+        //sr = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
-        life = 6;
+        life = 3;
         StartMovement();
     }
 
@@ -43,14 +48,16 @@ public class MosquitoController : MonoBehaviour
         if (canMove)
         {
             //time += Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, targetGameObject.transform.position, speed);
+
+            GetComponent<RectTransform>().anchoredPosition = Vector2.MoveTowards(GetComponent<RectTransform>().anchoredPosition, targetGameObject.GetComponent<RectTransform>().anchoredPosition, speed);
 
             if (transform.position == targetGameObject.transform.position)
             {
                 x = UnityEngine.Random.Range(initialLimitX, finalLimitX);
                 y = UnityEngine.Random.Range(initialLimitY, finalLimitY);
+   
 
-                targetGameObject.transform.position = new Vector2(x, y);
+                targetGameObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(x, y);
             }
 
             //else
@@ -69,7 +76,7 @@ public class MosquitoController : MonoBehaviour
         x = UnityEngine.Random.Range(initialLimitX, finalLimitX);
         y = UnityEngine.Random.Range(initialLimitY, finalLimitY);
 
-        targetGameObject.transform.position = new Vector2(x, y);
+        targetGameObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(x, y);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -90,21 +97,21 @@ public class MosquitoController : MonoBehaviour
     {
         life--;
         boxCollider.enabled = false;
-        sr.color = Color.red;
-        yield return new WaitForSeconds(0.2f);
-        sr.color = Color.white;
+        img.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        img.color = Color.white;
 
-        sr.color = Color.red;
-        yield return new WaitForSeconds(0.2f);
-        sr.color = Color.white;
+        img.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        img.color = Color.white;
 
-        sr.color = Color.red;
-        yield return new WaitForSeconds(0.2f);
-        sr.color = Color.white;
+        img.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        img.color = Color.white;
 
-        sr.color = Color.red;
-        yield return new WaitForSeconds(0.2f);
-        sr.color = Color.white;
+        img.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        img.color = Color.white;
         boxCollider.enabled = true;
     }
 

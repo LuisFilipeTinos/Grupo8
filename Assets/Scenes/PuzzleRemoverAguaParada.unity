@@ -427,7 +427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8387326477500798092, guid: c23de5f87c272ec4ea9ecfa60e34d9fd, type: 3}
       propertyPath: timeInSeconds
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1398,6 +1398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1051769190}
+  secondObject: {fileID: 0}
 --- !u!1 &1226372052
 GameObject:
   m_ObjectHideFlags: 0
@@ -4362,6 +4363,22 @@ PrefabInstance:
     - target: {fileID: 8068152666692257825, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471918769226258636, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_Color.a
+      value: 0.40392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471918769226258636, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471918769226258636, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471918769226258636, guid: d68d7c36fa47e444cb7b618f77cd6584, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
